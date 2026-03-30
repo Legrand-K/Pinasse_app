@@ -1,10 +1,10 @@
 
-/*
+
 module.exports = {
-  HOST: "ticketserviceapp.com",
-  USER: "admin",
-  PASSWORD: "mysqlaabb..00",
-  DB: "db_pinasse",
+  HOST: "sql312.infinityfree.com",
+  USER: "if0_41514916",
+  PASSWORD: "PxcmQjZD22N",
+  DB: "if0_41514916_pinasse_bd",
   dialect: "mysql",
   logging: false,
   operatorsAliases: 0,
@@ -15,9 +15,9 @@ module.exports = {
     idle: 10000
   }
 };
-*/
 
 
+/*
 module.exports = {
   HOST: "localhost",
   USER: "root",
@@ -33,4 +33,4 @@ module.exports = {
     idle: 10000
   }
 };
-
+*/

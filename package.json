@@ -2,7 +2,7 @@
   "name": "tutorial-api-nodejs",
   "version": "1.0.0",
   "description": " Node.js Rest Apis with Express, Sequelize & MySQL.",
-  "main": "server.js",
+  "main": "server-local.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
