@@ -28,10 +28,7 @@ app.get("/", (req, res) => {
 require("./app/routes")(app,path);
 require("./app/services/upload/routes")(app, express, path);
 
-/*
+
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
 });
-*/
-
-module.exports = app;
