@@ -1,6 +1,4 @@
 
-const fs =  require('fs');
-const https = require('https');
 const express = require("express");
 const cors = require("cors");
 const path = require('path');
@@ -10,11 +8,6 @@ const app = express();
 const corsOptions = {
   origin: "http://localhost:3002"
 };
-
-const options = {
-  key: fs.readFileSync('/etc/letsencrypt/live/ticketserviceapp.com/privkey.pem'),
-  cert: fs.readFileSync('/etc/letsencrypt/live/ticketserviceapp.com/fullchain.pem')
-}
 
 app.set('json spaces', 2)
 app.use(cors(corsOptions));
@@ -37,6 +30,5 @@ require("./app/services/upload/routes")(app, express, path);
 
 
 const PORT = process.env.PORT || 3001;
-
-https.createServer(options, app).listen(PORT, () => {
+app.listen(PORT, () => {
 });
